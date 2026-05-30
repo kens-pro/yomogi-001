@@ -150,6 +150,10 @@
       color: var(--c-gold-lt);
       position: relative;
       z-index: 1;
+      white-space: nowrap;
+    }
+    .header-price-mobile {
+      display: none;
     }
  
     /* ─── HERO ───────────────────────────────────────── */
@@ -1204,6 +1208,23 @@
  
     /* ─── RESPONSIVE ─────────────────────────────────── */
     @media (max-width: 480px) {
+      .site-header {
+        padding: 14px 18px;
+      }
+      .logo {
+        font-size: 0.95rem;
+        letter-spacing: 0.16em;
+      }
+      .header-price {
+        font-size: 0.82rem;
+        letter-spacing: 0.06em;
+      }
+      .header-price-full {
+        display: none;
+      }
+      .header-price-mobile {
+        display: inline;
+      }
       .hero-body { padding: 32px 24px 48px; }
       .hero-h1 { font-size: 44px; }
       .hero-h1-line { white-space: normal; }
@@ -1540,7 +1561,10 @@
   <!-- Header -->
   <header class="site-header">
     <div class="logo">刺し子どり</div>
-    <div class="header-price">LIMITED SET <span style="font-size:0.75em; color:var(--c-muted); letter-spacing:0.05em;">¥2,000 tax incl.</span></div>
+    <div class="header-price">
+      <span class="header-price-full">LIMITED SET <span style="font-size:0.75em; color:var(--c-muted); letter-spacing:0.05em;">¥2,000 tax incl.</span></span>
+      <span class="header-price-mobile">SET ¥2,000</span>
+    </div>
   </header>
  
   <!-- Hero -->
