@@ -1,0 +1,7 @@
+images/*
+!images/yomogi-*.jpg
+!images/KAKUJYU.jpg
+!images/KUMIHISI.jpg
+!images/MUTUDE.jpg
+!images/NOWAKE.jpg
+!images/TORI.jpg
