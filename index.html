@@ -1225,11 +1225,20 @@
       .header-price-mobile {
         display: inline;
       }
-      .hero-body { padding: 32px 24px 48px; }
-      .hero-h1 { font-size: clamp(36px, 10.5vw, 42px); }
+      .hero-body {
+        width: 100%;
+        max-width: none;
+        padding: 32px 20px 44px;
+      }
+      .hero-h1 {
+        font-size: clamp(30px, 8.8vw, 36px);
+        line-height: 1.22;
+        margin-bottom: 18px;
+      }
       .hero-h1-line {
-        display: inline;
+        display: block;
         white-space: normal;
+        max-width: calc(100vw - 40px);
       }
       .products-grid { grid-template-columns: 1fr; }
     }
@@ -1239,7 +1248,7 @@
         display: none;
       }
       .hero-h1 {
-        font-size: 34px;
+        font-size: 30px;
       }
     }
 
@@ -1598,11 +1607,11 @@
       </div>
       <div class="hero-actions">
         <a href="#sets" class="btn-primary">
-          <span>ラインナップを見る</span>
+          <span>ご購入はこちら</span>
           <span class="arrow">→</span>
         </a>
         <a href="https://lin.ee/hz2jt3Z" class="btn-primary btn-line-hero" target="_blank" rel="noopener">
-          <span>公式LINEで希望を伝える</span>
+          <span>メルカリ、直接購入はこちら</span>
           <span class="arrow">→</span>
         </a>
         <div class="hero-price-tag">¥2,000 <small>（税込）</small></div>
@@ -1673,50 +1682,6 @@
   </section>
  
   <div class="divider"><hr></div>
- 
-  <!-- Bonus -->
-  <section>
-    <div class="bonus-section reveal">
-      <div class="bonus-card">
-        <div class="bonus-badge">Purchase Privilege</div>
-        <h2 class="bonus-title">特別プレゼント：<span>刺し子下図データ 5種</span></h2>
-        <p class="bonus-desc">ご購入者様全員に、刺し子どり亭主厳選の「5種類のトレース用下図データ（PDF）」を差し上げます。そのまま印刷して、すぐ下図としてお使いいただけます。</p>
-
-        <div class="bonus-patterns">
-          <div class="pattern-pill">角十つなぎ</div>
-          <div class="pattern-pill">野分</div>
-          <div class="pattern-pill">六手籠目二重</div>
-          <div class="pattern-pill">組菱</div>
-          <div class="pattern-pill">鳥襷</div>
-        </div>
-
-        <div class="bonus-preview-grid">
-          <div class="bonus-preview-item">
-            <div class="bonus-preview-circle">
-              <img src="images/KAKUJYU.jpg" alt="角十つなぎ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
-            </div>
-            <div class="bonus-preview-label">角十つなぎ</div>
-          </div>
-          <div class="bonus-preview-item">
-            <div class="bonus-preview-circle"><img src="images/NOWAKE.jpg" alt="角十つなぎ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
-            <div class="bonus-preview-label">野分</div>
-          </div>
-          <div class="bonus-preview-item">
-            <div class="bonus-preview-circle"><img src="images/MUTUDE.jpg" alt="角十つなぎ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
-            <div class="bonus-preview-label">六手籠目二重</div>
-          </div>
-          <div class="bonus-preview-item">
-            <div class="bonus-preview-circle"><img src="images/KUMIHISI.jpg" alt="角十つなぎ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
-            <div class="bonus-preview-label">組菱</div>
-          </div>
-          <div class="bonus-preview-item">
-            <div class="bonus-preview-circle"><img src="images/TORI.jpg" alt="角十つなぎ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
-            <div class="bonus-preview-label">鳥襷</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
  
   <!-- Products -->
   <section id="sets">
@@ -1816,6 +1781,50 @@
         </article>
  
       </div><!-- /products-grid -->
+    </div>
+  </section>
+
+  <!-- Bonus -->
+  <section>
+    <div class="bonus-section reveal">
+      <div class="bonus-card">
+        <div class="bonus-badge">Purchase Privilege</div>
+        <h2 class="bonus-title">特別プレゼント：<span>刺し子下図データ 5種</span></h2>
+        <p class="bonus-desc">ご購入者様全員に、刺し子どり亭主厳選の「5種類のトレース用下図データ（PDF）」を差し上げます。そのまま印刷して、すぐ下図としてお使いいただけます。</p>
+
+        <div class="bonus-patterns">
+          <div class="pattern-pill">角十つなぎ</div>
+          <div class="pattern-pill">野分</div>
+          <div class="pattern-pill">六手籠目二重</div>
+          <div class="pattern-pill">組菱</div>
+          <div class="pattern-pill">鳥襷</div>
+        </div>
+
+        <div class="bonus-preview-grid">
+          <div class="bonus-preview-item">
+            <div class="bonus-preview-circle">
+              <img src="images/KAKUJYU.jpg" alt="角十つなぎ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+            </div>
+            <div class="bonus-preview-label">角十つなぎ</div>
+          </div>
+          <div class="bonus-preview-item">
+            <div class="bonus-preview-circle"><img src="images/NOWAKE.jpg" alt="角十つなぎ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+            <div class="bonus-preview-label">野分</div>
+          </div>
+          <div class="bonus-preview-item">
+            <div class="bonus-preview-circle"><img src="images/MUTUDE.jpg" alt="角十つなぎ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+            <div class="bonus-preview-label">六手籠目二重</div>
+          </div>
+          <div class="bonus-preview-item">
+            <div class="bonus-preview-circle"><img src="images/KUMIHISI.jpg" alt="角十つなぎ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+            <div class="bonus-preview-label">組菱</div>
+          </div>
+          <div class="bonus-preview-item">
+            <div class="bonus-preview-circle"><img src="images/TORI.jpg" alt="角十つなぎ" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+            <div class="bonus-preview-label">鳥襷</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
  
